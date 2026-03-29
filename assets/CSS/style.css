@@ -17,6 +17,13 @@ body {
     background-color: var(--bg-white);
 }
 
+
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+
 /* ==================== Preloader (Loader) ==================== */
 #preloader {
     position: fixed;
@@ -211,6 +218,19 @@ body {
 .btn-outline-custom:hover {
     border-color: var(--primary-color);
     color: var(--primary-color);
+}
+
+.hero-section {
+    overflow: hidden;
+}
+
+@media (max-width: 768px) {
+    .card-1, .card-2 {
+        display: none;
+    }
+    .hero-title {
+        font-size: 32px;
+    }
 }
 
 /* ==================== Sections General ==================== */
